@@ -5,6 +5,7 @@ from uuid import uuid4
 class Convidado(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     name = models.CharField(max_length=100, null=False, unique=True)
+    confirmed = models.BooleanField(null=False, default=False)
 
 # Presentes
 class Presente(models.Model):
