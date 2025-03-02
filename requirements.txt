@@ -2,4 +2,5 @@ Django
 gunicorn
 djangorestframework
 Pillow
+django-cors-headers # Para resolver erro de cors
 # psycopg2-binary  # Se for usar PostgreSQL
