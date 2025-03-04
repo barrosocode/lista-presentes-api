@@ -131,10 +131,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Demais alterações para resolver problema de cors
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Next.js rodando localmente
-    # "https://seu-front-em-producao.com",  # URL da aplicação em produção
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",  # Next.js rodando localmente
+#     # "https://seu-front-em-producao.com",  # URL da aplicação em produção
+# ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
