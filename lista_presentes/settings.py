@@ -136,7 +136,7 @@ CORS_ALLOWED_ORIGINS = [
     # "https://seu-front-em-producao.com",  # URL da aplicação em produção
 ]
 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 # CORS_ALLOW_CREDENTIALS = True
 
