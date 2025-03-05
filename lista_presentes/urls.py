@@ -19,6 +19,10 @@ from django.urls import path, include
 from rest_framework import routers
 from lista_presentes_api.api import viewsets as apiviewsets
 
+# Configuraçõe para servir imagens
+from django.conf import settings
+from django.conf.urls.static import static
+
 # Creating router
 router = routers.DefaultRouter()
 
@@ -31,3 +35,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls))
 ]
+
+
+# Apenas para desenvolvimento! Em produção, o Nginx ou outro servidor deve servir a mídia
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -11,7 +11,7 @@ class Convidado(models.Model):
 class Presente(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     name = models.CharField(max_length=50, null=False, unique=True)
-    image = models.ImageField()
+    image = models.ImageField(upload_to='presentes/')
     link = models.CharField(max_length=350, null=False)
     store = models.CharField(max_length=50, null=False)
     description = models.TextField(null=False)
